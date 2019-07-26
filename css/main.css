@@ -66,10 +66,110 @@ a:hover {
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
+Section: Header
 —————————————————————————————————————————————————————————————————————— *****/
 
+.header {
+	background: #366092 url(../images/header/header-bg.jpg) no-repeat center top / cover;
+	height: 100vh;
+	min-height: 750px;
+}
 
+/* top-line */
+.top-line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
+}
+.nav {
+	display: flex;
+}
+.nav a {
+	font: 700 1em 'Muli', sans-serif;
+	color: #fff;
+	position: relative;
+
+	transition: color .2s linear;
+}
+.nav a:not(:last-child) {
+	margin-right: 2.8em;
+}
+.nav a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -.4em;
+
+	width: 100%;
+	height: .2em;
+
+	background-color: #ff660d;
+	border-radius: .2em;
+
+	transform: scale(0);
+	transform-origin: 0;
+	transition: transform .2s linear;
+}
+.nav a:hover {
+	color: #ff660d;
+}
+.nav a:hover::after {
+	transform: scale(1);
+}
+
+/* header-content */
+.header-suptitle,
+.header-title {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: .9;
+}
+.header-suptitle {
+	font-size: 1.85em;
+	letter-spacing: .05em;
+	color: #81aac9;
+
+	margin-top: 2rem;
+}
+.header-title {
+	font-size: 14em; /*прогрессивный размер - font-size: calc(10em + 4vw);*/
+	letter-spacing: -0.04em;
+	color: #66aecd;
+
+	background: linear-gradient(90deg, #4882bd, #66aecd, #4882bd);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	margin-bottom: 4.5rem;
+}
+.header-text {
+	font: 400 1.4em 'Muli', sans-serif;
+	line-height: 1.5;
+	color: #fefefe;
+
+	width: 100%;
+	max-width: 615px;
+	margin-bottom: 3rem;
+}
+.btn {
+	display: inline-block;
+	font: 700 1.125em 'Catamaran', sans-serif;
+	text-transform: uppercase;
+	color: #fefefe;
+
+	background-color: #ff660d;
+	border-radius: .3em;
+	padding: .8em 2.5em;
+
+	transition: background .15s linear;
+}
+.btn:hover {
+	color: #fefefe;
+	background-color: #f45107;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 

@@ -1,3 +1,3 @@
-<h3>Ski & Snowboard School</h3>
+<h3>Ski & Snowboard School HTML-Template</h3>
 
-<p>Ski & Snowboard School HTML-Template</p>
+<!-- <p>Ski & Snowboard School HTML-Template</p> -->
