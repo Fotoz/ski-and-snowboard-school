@@ -65,6 +65,28 @@ a:hover {
 	max-width: 1710px;
 }
 
+/* Basic Styles For Sections */
+.s-padding {
+	padding: 7em 0 8.5em; /*136px 0*/
+}
+.s-title {
+	font: 900 3.75em 'Catamaran', sans-serif;
+	text-transform: uppercase;
+	color:#2f2f2f;
+}
+.s-item-text {
+	display: block;
+	margin-bottom: .7rem;
+
+	font-size: .875em;
+	color: #565656;
+}
+.s-item-title {
+	font: 900 1.5em 'Catamaran', sans-serif;
+	line-height: 1.15;
+	color: #333333;
+}
+
 /***** ——————————————————————————————————————————————————————————————————————
 Section: Header
 —————————————————————————————————————————————————————————————————————— *****/
@@ -172,10 +194,43 @@ Section: Header
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
+Section: Offers
 —————————————————————————————————————————————————————————————————————— *****/
 
+.s-offers {
+	text-align: center;
+}
+.offer-text {
+	font-size: 1.125em;
+	color: #565656;
 
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+/* our-offers */
+.our-offers {
+	display: flex;
+	justify-content: space-around;
+
+	text-transform: uppercase;
+	margin-top: 4rem;
+}
+.our-offers-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 240px;
+}
+.offer-img {
+	margin-bottom: 2rem;
+}
+.btn--offers {
+	font-size: .938em;
+
+	padding: .8em 1.5em;
+	margin-top: 1rem;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
