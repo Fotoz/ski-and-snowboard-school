@@ -220,6 +220,7 @@ Section: Offers
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	flex-basis: 240px;
 }
 .offer-img {
@@ -233,10 +234,13 @@ Section: Offers
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
+Section: Gallery
 —————————————————————————————————————————————————————————————————————— *****/
 
-
+.gallery {
+	display: flex;
+	justify-content: center;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
