@@ -1,11 +1,7 @@
-/**** ——————————————————————————————————————————————————————————————————————
+/*** ——————————————————————————————————————————————————————————————————————
 Google Fonts
 —————————————————————————————————————————————————————————————————————— *****/
 
-/* 
-font-family: 'Muli', sans-serif;
-font-family: 'Catamaran', sans-serif;
-*/
 @import url('https://fonts.googleapis.com/css?family=Catamaran:700,900|Muli:300,400,600,700&display=swap');
 
 /***** ——————————————————————————————————————————————————————————————————————
@@ -84,7 +80,7 @@ a:hover {
 .s-item-title {
 	font: 900 1.5em 'Catamaran', sans-serif;
 	line-height: 1.15;
-	color: #333333;
+	color: #333;
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
@@ -307,11 +303,79 @@ Section: About Us
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
-—————————————————————————————————————————————————————————————————————— ****
+Section: Testimonials
+—————————————————————————————————————————————————————————————————————— ****/
 
+.s-testimonials {
+	text-align: center;
+}
 
+/* owl-carousel */
+.owl-carousel {
+	margin-top: 2rem;
+}
+.owl-theme .owl-dots .owl-dot span {
+	width: 13px;
+	height: 13px;
+	margin: 5px 9px;
+
+	background: #d1d8df;
+	transition: background .1s linear;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #333;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	background: #ff660d;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+	margin-top: 35px;
+}
+.owl-carousel .owl-item img {
+	display: initial;
+	width: initial;
+}
+
+/* testimonials-item */
+.testimonials-item {
+	padding: 0 15px;
+}
+.testimonials-item img {
+	border-radius: 10em;
+}
+.client-name {
+	font: 900 1.125em 'Catamaran', sans-serif;
+	text-transform: uppercase;
+	color: #333;
+
+	display: table;
+	margin: 1rem auto 1.5rem auto;
+	position: relative;
+}
+.client-name::before,
+.client-name::after {
+	content: '';
+	width: 50px;
+	height: 36px;
+	position: absolute;
+	top: -35px;
+	left: -65px;
+
+	background: url(../images/testimonials/quote-left.png) no-repeat;
+}
+.client-name::after {
+	left: initial;
+	right: -65px;
+	background: url(../images/testimonials/quote-right.png) no-repeat;
+}
+.testimonials-text {
+	font-size: 1.125em;
+	line-height: 1.9;
+
+	max-width: 800px;
+	margin: 0 auto;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
-—————————————————————————————————————————————————————————————————————— ****
+—————————————————————————————————————————————————————————————————————— ***
