@@ -1,4 +1,4 @@
-/***** ——————————————————————————————————————————————————————————————————————
+/**** ——————————————————————————————————————————————————————————————————————
 Google Fonts
 —————————————————————————————————————————————————————————————————————— *****/
 
@@ -95,6 +95,7 @@ Section: Header
 	background: #366092 url(../images/header/header-bg.jpg) no-repeat center / cover;
 	height: 100vh;
 	min-height: 750px;
+	max-height: 1080px;
 }
 
 /* top-line */
@@ -255,16 +256,62 @@ Section: Crew
 
 	margin-top: 2rem;
 }
+.instructor img {
+	border-radius: 10em;
+}
 .instructor .s-item-title {
 	margin-bottom: 0;
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
+Section: About Us
 —————————————————————————————————————————————————————————————————————— *****/
+
+.s-about-us {
+	background: #beccdd url(../images/about-us/about-us-bg.jpg) no-repeat center / cover;
+}
+.s-about-us .s-title {
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+.about-us-text {
+	font-size: 1.125em;
+	line-height: 1.9;
+	color: #2b2b2b;
+
+	max-width: 800px;
+	margin-bottom: .5rem;
+}
+
+/* about-us-stats */
+.about-us-stats {
+	text-transform: uppercase;
+	margin-top: 3.5rem;
+}
+.stats-item {
+	display: inline-block;
+}
+.stats-item:not(:last-child) {
+	margin-right: 6rem;
+}
+.stats-item span {
+	display: block;
+}
+.stats-number {
+	font: 900 4em 'Catamaran', sans-serif;
+	line-height: 1.1;
+	color: #ff660d;
+}
+.stats-text {
+	font: 600 1.125em 'Muli', sans-serif;
+}
+
+/***** ——————————————————————————————————————————————————————————————————————
+Section: 
+—————————————————————————————————————————————————————————————————————— ****
 
 
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
-—————————————————————————————————————————————————————————————————————— *****/
+—————————————————————————————————————————————————————————————————————— ****
