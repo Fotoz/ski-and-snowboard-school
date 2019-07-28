@@ -377,5 +377,93 @@ Section: Testimonials
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
-—————————————————————————————————————————————————————————————————————— ***
+Section: Footer
+—————————————————————————————————————————————————————————————————————— *****/
+
+.footer {
+	background-color: #2f2f2f;
+	position: relative;
+}
+.footer::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 60%;
+
+	background: url(../images/footer/footer-map.jpg) no-repeat center / cover;
+}
+.footer-contacts {
+	padding: 4.325em 0 5.7em;
+}
+.footer-contacts .s-title {
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+/* footer-address */
+.footer-address {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	color: #f7f7f7;
+
+	margin-bottom: 3.5rem;
+}
+.footer-address p {
+	position: relative;
+	margin: 0 0 1.6rem 2.6rem;
+}
+.footer-address p i {
+	position: absolute;
+	top: .27em;
+	left: -1.9em;
+	margin-right: 1em;
+
+	color: #ff660d;
+}
+
+/* footer-social-links */
+.footer-social-links {
+	margin-left: .2rem;
+}
+.footer-social-links a {
+	font-size: 1.8em;
+	color: #979797;
+
+	transition: color .1s linear;
+}
+.footer-social-links a:hover {
+	color: #fff;
+}
+.footer-social-links a:not(:last-child) {
+	margin-right: 2rem;
+}
+
+/***—————————— toTop button ——————————***/
+.toTop {
+	position: fixed;
+	right: -100px;
+	bottom: 25px;
+	z-index: 1;
+
+	width: 50px;
+	height: 50px;
+
+	font-size: 1.4em;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+
+	background-color: #666;
+	border-radius: 10em;
+	opacity: .7;
+	transition: all .25s linear;
+}
+.toTop:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.toTop-active {
+	right: 25px;
+}
