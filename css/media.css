@@ -2,18 +2,335 @@
 Responsive Media Queries
 —————————————————————————————————————————————————————————————————————— *****/
 
-@media (max-width: 1200px) {
-	
+@media (max-width: 1199px) {
+
+	/*——————— Basic Styles For Sections ———————*/
+	.s-padding {
+		padding: 5em 0 6.5em;
+	}
+
+	/*——————— Section: Header ———————*/
+	.header-title {
+		font-size: 12em;
+	}
+
+	/*——————— Section: Crew ———————*/
+	.our-instructors {
+		justify-content: space-around;
+	}
+	.instructor {
+		max-width: 200px;
+	}
+
+	/*——————— Section: About Us ———————*/
+	.about-us-text {
+		max-width: 690px;
+	}
+	.stats-item:not(:last-child) {
+		margin-right: 4.8rem;
+	}
+
+	/*——————— Section: Footer ———————*/
+	.footer::after {
+		width: 55%;
+	}
+	.footer-contacts {
+		padding: 2.875em 0 4.375em;
+	}
+	.footer-address {
+		margin-bottom: 3rem;
+	}
+	.footer-address p {
+		margin-bottom: 1.2rem;
+	}
+
 }
-@media (max-width: 992px) {
-	
+
+@media (max-width: 991px) {
+
+	/*——————— Section: Header ———————*/
+	.wrapper--flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 100vh;
+		min-height: 650px;
+		max-height: 740px;
+	}
+	.header {
+		min-height: 650px;
+		max-height: 740px;
+	}
+	.top-line {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 50;
+		width: 320px;
+		height: 100vh;
+		padding-top: 1em;
+		padding-bottom: 0;
+
+		flex-direction: column;
+		justify-content: flex-start;
+
+		background-color: #2f2f2f;
+		opacity: 0;
+		transform: translateX(100%);
+		transition: transform .4s linear, opacity .4s linear;
+	}
+	.top-line.is-active {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.header-logo {
+		position: absolute;
+		top: 16px;
+		left: 15px;
+		z-index: 100;
+		width: 146px;
+	}
+	.nav {
+		flex-direction: column;
+		text-align: center;
+		margin-top: 5.5rem;
+	}
+	.nav a.is-active {
+		color: #ff660d;
+	}
+	.nav a:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+	.nav a::after,
+	.nav a::before {
+		content: '\f2dc';
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 400;
+		font-size: .9em;
+	}
+	.nav a::before {
+		margin-right: .7em;
+	}
+	.nav a::after {
+		position: static;
+		margin-left: .7em;
+
+		background-color: transparent;
+		transform: scale(1);
+	}
+	.burger {
+		display: block;
+	}
+	.header-suptitle {
+		margin-top: 0;
+		font-size: 1.6em;
+	}
+	.header-title {
+		font-size: 9em;
+	}
+
+	/*——————— Section: Crew ———————*/
+	.our-instructors {
+		justify-content: space-between;
+		max-width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.instructor:nth-child(1),
+	.instructor:nth-child(2) {
+		margin-bottom: 3rem;
+	}
+
+	/*——————— Section: About Us ———————*/
+	.about-us-text {
+		max-width: 600px;
+		line-height: 1.7;
+	}
+	.stats-item:not(:last-child) {
+		margin-right: 4.5rem;
+	}
+
+	/*——————— Section: Footer ———————*/
+	.footer::after {
+		position: initial;
+		display: block;
+		width: 100%;
+		height: 340px;
+
+		background-image: url(../images/footer/footer-map--991.jpg);
+	}
+	.footer-contacts {
+		padding-bottom: 3.125em;
+		text-align: center;
+	}
+	.footer-address {
+		margin-bottom: 2rem;
+	}
+	.footer-address p {
+		margin-bottom: 1rem;
+		margin-left: 0;
+	}
+	.footer-address p i {
+		position: initial;
+		margin-right: .7em;
+	}
+	.footer-social-links {
+		margin-left: 0;
+	}
+
+	/*——————— Section: toTop button ———————*/
+	.toTop {
+		display: none;
+	}
+
 }
-@media (max-width: 768px) {
-	
+
+@media (max-width: 767px) {
+
+	/*——————— Basic Styles For Sections ———————*/
+	.s-padding {
+		padding: 3.75em 0 5em;
+	}
+	.s-title {
+		font-size: 3em;
+	}
+
+	/*——————— Section: Header ———————*/
+	.header-suptitle {
+		font-size: 1.4em;
+	}
+	.header-title {
+		font-size: 6.9em;
+	}
+	.header-text {
+		font-size: 1.2em;
+	}
+	.btn {
+		font-size: 1em;
+	}
+
+	/*——————— Section: Offers ———————*/
+	.offer-text {
+		font-size: 1.12em;
+	}
+	.our-offers {
+		max-width: 520px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.our-offers-item:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+	.btn--offers {
+		font-size: .938em;
+	}
+
+	/*——————— Section: Gallery ———————*/
+	.gallery-column:last-child {
+		display: none;
+	}
+
+	/*——————— Section: About Us ———————*/
+	.about-us-text {
+		max-width: 480px;
+		line-height: 1.5;
+	}
+	.stats-item:not(:last-child) {
+		margin-right: 2.2rem;
+	}
+	.stats-number {
+		font-size: 3em;
+	}
+	.stats-text {
+		font-size: 1em;
+	}
+
 }
-@media (max-width: 576px) {
-	
+
+@media (max-width: 575px) {
+
+	/*——————— Basic Styles For Sections ———————*/
+	.s-padding {
+		padding: 3.5em 0 4.375em;
+	}
+	.s-title {
+		font-size: 2.15em;
+	}
+
+	/*——————— Section: Header ———————*/
+	.header {
+		background-image: url(../images/header/header-bg--642.jpg);
+		text-align: center;
+	}
+	.header-title {
+		margin-bottom: 3.5rem;
+	}
+	.header-text br {
+		display: none;
+	}
+
+	/*——————— Section: Offers ———————*/
+	.offer-text {
+		font-size: 1.1em;
+	}
+	.our-offers {
+		margin-top: 3rem;
+	}
+
+	/*——————— Section: Gallery ———————*/
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+	.gallery-column {
+		max-width: 415px;
+	}
+
+	/*——————— Section: About Us ———————*/
+	.s-about-us {
+		background-image: url(../images/about-us/about-us-bg--642.jpg);
+	}
+	.about-us-text {
+		font-size: 1em;
+	}
+	.about-us-stats {
+		margin-top: 2rem;
+	}
+	.stats-item {
+		display: block;
+	}
+	.stats-item:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+
+	/*——————— Section: Testimonials ———————*/
+	.testimonials-text {
+		font-size: 1.1em;
+		line-height: 1.8;
+	}
+
 }
-@media (max-width: 320px) {
-	
+
+@media (max-width: 470px) {
+
+	/*——————— Section: Crew ———————*/
+	.our-instructors {
+		flex-direction: column;
+		align-items: center;
+	}
+	.instructor:nth-child(3) {
+		margin-bottom: 3rem;
+	}
+
+	/*——————— Section: Footer ———————*/
+	.footer::after {
+		height: 300px;
+	}
+	.footer-address {
+		font-size: 1em;
+	}
+
 }

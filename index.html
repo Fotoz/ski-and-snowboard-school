@@ -14,8 +14,7 @@
 		<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
 		<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
 		<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/all.css">
 
 		<script src="libs/prefixfree/prefixfree.min.js"></script>
 	</head>
@@ -24,32 +23,38 @@
 		<!-- Section: Header -->
 			<header class="header" id="header">
 				<div class="wrapper--second">
-					<div class="top-line">
-						<img src="images/header/logo.png" alt="logo">
+					<div class="top-line" id="top_line">
+						<img class="header-logo img-fluid" src="images/header/logo.png" alt="logo">
 
 						<nav class="nav">
 							<a href="#" data-scroll="#header">Home</a>
-							<a href="#" data-scroll="#s-offers">What We Offer</a>
+							<a href="#" data-scroll="#s_offers">What We Offer</a>
 							<a href="#" data-scroll="#gallery">Gallery</a>
-							<a href="#" data-scroll="#s-crew">About Us</a>
+							<a href="#" data-scroll="#s_crew">About Us</a>
 							<a href="#" data-scroll="#testimonials">Testimonials</a>
 							<a href="#" data-scroll="#footer">Contact Us</a>
 						</nav>
 					</div>
+
+					<button class="burger" id="burger" type="button">
+						<span class="burger-item">Menu</span>
+					</button>
 				</div> <!-- /.wrapper-second -->
 
-				<div class="wrapper">
-					<p class="header-suptitle">ski & snowboard school</p>
-					<h1 class="header-title">stay & ski</h1>
+				<div class="wrapper wrapper--flex">
+					<div class="header-content">
+						<p class="header-suptitle">ski & snowboard school</p>
+						<h1 class="header-title">stay & ski</h1>
 
-					<p class="header-text">The countdown to ski season has begun! So, it is high<br>time to improve your skills to have maximum fun this winter</p>
-					<a class="btn" href="#">online booking</a>
+						<p class="header-text">The countdown to ski season has begun! So, it is high <br>time to improve your skills to have maximum fun this winter</p>
+						<a class="btn" href="#">online booking</a>
+					</div>
 				</div>
 			</header>
 		<!-- End Section: Header -->
 
 		<!-- Section: Offers -->
-			<section class="s-offers s-padding" id="s-offers">
+			<section class="s-offers s-padding" id="s_offers">
 				<div class="wrapper">
 					<h2 class="s-title">what we offer</h2>
 					<p class="offer-text">Skiing and snowboarding still rank among the undisputed winter sport highlights for all ages and ability levels. The perfectly groomed ski slopes makes a real heaven for skiers and riders. Our professional ski and snowboard instructors can show you all the little details while improving your skiing techniques and riding skills.</p>
@@ -110,31 +115,31 @@
 		<!-- End Section: Gallery -->
 
 		<!-- Section: Crew -->
-			<section class="s-crew s-padding" id="s-crew">
+			<section class="s-crew s-padding" id="s_crew">
 				<div class="wrapper">
 					<h2 class="s-title">meet our crew</h2>
 
-					<div class="our-instrustors">
+					<div class="our-instructors">
 						<div class="instructor">
-							<img src="images/instructors/instructor-1.jpg" alt="Jamie Garcia">
+							<img class="img-fluid" src="images/instructors/instructor-1.jpg" alt="Jamie Garcia">
 							<small class="s-item-text">instrusctor</small>
 							<h4 class="s-item-title">Jamie Garcia</h4>
 						</div>
 
 						<div class="instructor">
-							<img src="images/instructors/instructor-2.jpg" alt="James Billings">
+							<img class="img-fluid" src="images/instructors/instructor-2.jpg" alt="James Billings">
 							<small class="s-item-text">instrusctor</small>
 							<h4 class="s-item-title">James Billings</h4>
 						</div>
 
 						<div class="instructor">
-							<img src="images/instructors/instructor-3.jpg" alt="Peter Colins">
+							<img class="img-fluid" src="images/instructors/instructor-3.jpg" alt="Peter Colins">
 							<small class="s-item-text">instrusctor</small>
 							<h4 class="s-item-title">Peter Colins</h4>
 						</div>
 
 						<div class="instructor">
-							<img src="images/instructors/instructor-4.jpg" alt="Amanda Lee">
+							<img class="img-fluid" src="images/instructors/instructor-4.jpg" alt="Amanda Lee">
 							<small class="s-item-text">instrusctor</small>
 							<h4 class="s-item-title">Amanda Lee</h4>
 						</div>
@@ -221,7 +226,7 @@
 
 						<address class="footer-address">
 							<p><i class="fas fa-phone-alt"></i>+43 662 123456</p>
-							<p><i class="fas fa-map-marker-alt"></i>Paracelsusstraße 26, 5020<br>Salzburg, Austria</p>
+							<p><i class="fas fa-map-marker-alt"></i>Paracelsusstrasse 26, 5020<br>Salzburg, Austria</p>
 							<p><i class="fas fa-envelope"></i>inbox@mountain.com</p>
 							<p><i class="fas fa-clock"></i>open hours: 8.00 am – 10.00 pm<br>monday - sunday</p>
 						</address>
@@ -242,7 +247,7 @@
 		<!-- JS Locals -->
 			<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 			<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-			<script src="js/common.js"></script>
+			<script src="js/common.min.js"></script>
 	</body>
 
 </html>

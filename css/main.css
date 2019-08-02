@@ -63,7 +63,7 @@ a:hover {
 
 /* Basic Styles For Sections */
 .s-padding {
-	padding: 7em 0 8.5em; /*136px 0*/
+	padding: 7em 0 8.5em;
 }
 .s-title {
 	font: 900 3.75em 'Catamaran', sans-serif;
@@ -88,7 +88,7 @@ Section: Header
 —————————————————————————————————————————————————————————————————————— *****/
 
 .header {
-	background: #366092 url(../images/header/header-bg.jpg) no-repeat center / cover;
+	background: #366092 url(../images/header/header-bg--1920.jpg) no-repeat center / cover;
 	height: 100vh;
 	min-height: 750px;
 	max-height: 1080px;
@@ -137,6 +137,64 @@ Section: Header
 	transform: scale(1);
 }
 
+/* burger */
+.burger {
+	display: none;
+	position: fixed;
+	top: 32px;
+	right: 15px;
+	z-index: 100;
+	padding: 9px 0 9px 10px;
+
+	background: none;
+	cursor: pointer;
+}
+.burger-item {
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 4px;
+
+	font-size: 0;
+	color: transparent;
+
+	background-color: #81aac9;
+	border-radius: 3px;
+
+	transition: background .4s linear;
+}
+.burger-item::before,
+.burger-item::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	height: 100%;
+
+	background-color: #81aac9;
+	border-radius: 3px;
+
+	transition: background .4s linear, width .15s linear;
+}
+.burger-item::before {
+	top: -9px;
+	width: 20px;
+}
+.burger-item::after {
+	bottom: -9px;
+	width: 40px;
+}
+.burger.is-active .burger-item,
+.burger.is-active .burger-item::before,
+.burger.is-active .burger-item::after {
+	background-color: #fff;
+}
+.burger.is-active .burger-item::before {
+	width: 40px;
+}
+.burger.is-active .burger-item::after {
+	width: 20px;
+}
+
 /* header-content */
 .header-suptitle,
 .header-title {
@@ -154,7 +212,7 @@ Section: Header
 	margin-top: 2rem;
 }
 .header-title {
-	font-size: 14em; /*прогрессивный размер - font-size: calc(10em + 4vw);*/
+	font-size: 14em;
 	letter-spacing: -0.04em;
 	color: #66aecd;
 
@@ -209,6 +267,7 @@ Section: Offers
 .our-offers {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 
 	text-transform: uppercase;
 	margin-top: 4rem;
@@ -218,7 +277,8 @@ Section: Offers
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	flex-basis: 240px;
+
+	max-width: 240px;
 }
 .btn--offers {
 	font-size: .938em;
@@ -246,11 +306,12 @@ Section: Crew
 }
 
 /* our-instrustors */
-.our-instrustors {
+.our-instructors {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 .instructor img {
 	border-radius: 10em;
@@ -264,7 +325,7 @@ Section: About Us
 —————————————————————————————————————————————————————————————————————— *****/
 
 .s-about-us {
-	background: #beccdd url(../images/about-us/about-us-bg.jpg) no-repeat center / cover;
+	background: #beccdd url(../images/about-us/about-us-bg--1920.jpg) no-repeat center / cover;
 }
 .s-about-us .s-title {
 	line-height: 1.2;
@@ -392,10 +453,10 @@ Section: Footer
 	bottom: 0;
 	width: 60%;
 
-	background: url(../images/footer/footer-map.jpg) no-repeat center / cover;
+	background: url(../images/footer/footer-map--1450.jpg) no-repeat center / cover;
 }
 .footer-contacts {
-	padding: 4.325em 0 5.7em;
+	padding: 4.125em 0 5.625em;
 }
 .footer-contacts .s-title {
 	color: #fff;

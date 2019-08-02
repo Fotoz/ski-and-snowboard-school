@@ -16,19 +16,30 @@ $(function() {
 		var sectionId = $(this).data('scroll'),
 				sectionOffset = $(sectionId).offset().top;
 
-		// нужно для изменения активной ссылки
-		// $('.nav a').removeClass('active'); // #nav
-		// $(this).addClass('active');
+		$('.nav a').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		$('#top_line').toggleClass('is-active');
+		$('#burger').removeClass('is-active');
 
 		$('html, body').animate({
 			scrollTop: sectionOffset
-		}, 1000);
+		}, 700);
+	});
+
+
+// menu-nav-toggle
+	$('#burger').on('click', function(event) {
+		event.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$('#top_line').toggleClass('is-active');
 	});
 
 
 // toTop-button
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > $(this).height() - 1) {
+		if ($(this).scrollTop() >= $(this).height()) {
 				$('.toTop').addClass('toTop-active');
 		} else {
 				$('.toTop').removeClass('toTop-active');
