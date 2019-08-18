@@ -25,26 +25,20 @@ body {
 
 	min-width: 320px;
 }
-ul {
-	margin: 0;
-	padding-left: 0;
-}
-ul li {
-	list-style: none;
-}
-input,
-textarea,
-button:focus {
-	outline: none;
-}
 button {
 	border: none;
+}
+button:focus {
+	outline: none;
 }
 a:hover {
 	text-decoration: none;
 }
 
 /* Extra Classes */
+.overflow-hidden {
+	overflow: hidden;
+}
 .img-fluid {
 	display: block;
 	max-width: 100%;

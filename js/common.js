@@ -19,8 +19,9 @@ $(function() {
 		$('.nav a').removeClass('is-active');
 		$(this).addClass('is-active');
 
-		$('#top_line').toggleClass('is-active');
 		$('#burger').removeClass('is-active');
+		$('#top_line').removeClass('is-active');
+		$('body').removeClass('overflow-hidden');
 
 		$('html, body').animate({
 			scrollTop: sectionOffset
@@ -34,6 +35,13 @@ $(function() {
 
 		$(this).toggleClass('is-active');
 		$('#top_line').toggleClass('is-active');
+		$('body').toggleClass('overflow-hidden');
+
+		// resetting scroll for menu
+		$('.nav').delay(500).queue(function(reset_scroll) {
+			$(this).scrollTop(0);
+			reset_scroll();
+		});
 	});
 
 

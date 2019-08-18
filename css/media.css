@@ -67,12 +67,9 @@ Responsive Media Queries
 		top: 0;
 		right: 0;
 		z-index: 50;
-		justify-content: center;
 
-		width: 100%;
-		max-width: 420px;
-		height: 100vh;
-		min-height: 568px;
+		width: 370px;
+		height: 100%;
 		padding: 0;
 
 		background-color: #2f2f2f;
@@ -89,10 +86,19 @@ Responsive Media Queries
 		top: 16px;
 		left: 15px;
 		z-index: 100;
+
 		width: 146px;
 	}
 	.nav {
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		width: 100%;
+		height: 100%;
+
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
 	}
 	.nav a.is-active {
 		color: #ff660d;
@@ -127,6 +133,20 @@ Responsive Media Queries
 	}
 	.header-title {
 		font-size: 9em;
+	}
+
+	@media (max-height: 480px) {
+		.header-logo {
+			display: none;
+		}
+		.nav {
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 28px 15px;
+		}
+		.nav a::after {
+			display: none;
+		}
 	}
 
 	/*——————— Section: Crew ———————*/
@@ -261,6 +281,9 @@ Responsive Media Queries
 	.header {
 		background-image: url(../images/header/header-bg--642.jpg);
 		text-align: center;
+	}
+	.top-line {
+		width: 100%;
 	}
 	.header-title {
 		margin-bottom: 3.5rem;
