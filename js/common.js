@@ -45,6 +45,17 @@ $(function() {
 	});
 
 
+// removing classes for menu if window resize
+	$(window).on('resize', function() {
+		var width = $(document).width();
+
+		if ( width > 991 ) {
+			$('body').removeClass('overflow-hidden');
+			$('#top_line').removeClass('is-active');
+		}
+	});
+
+
 // toTop-button
 	$(window).scroll(function() {
 		if ($(this).scrollTop() >= $(this).height()) {
